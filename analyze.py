@@ -2,7 +2,6 @@
 """Rental property investment analyzer."""
 
 import argparse
-import math
 
 
 def monthly_mortgage_payment(principal: float, annual_rate: float, years: int) -> float:
@@ -114,7 +113,7 @@ def analyze(
     print(wide_sep)
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(
         description="Analyze a rental property investment.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
